@@ -1,36 +1,407 @@
-<!Doctype html>
-<html>
-  <head>
-<title>services</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Technology services by Khan Skyline Technologies including website development, mobile apps, cloud software, e-commerce and custom software.">
+
+<title>Our Services | Khan Skyline Technologies</title>
+
 <style>
-  body{
-      background-color: lightblue;
-      text-align: center;
-      font-family: Arial;
-  }
-  h1{
-    color: blue;
-  }
-  p{
-    font-size: 20px;
-  }
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+/* Navigation */
+nav{
+    background:#0b3d91;
+    padding:16px 10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 9px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Main */
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:35px auto;
+}
+
+/* Heading */
+.heading{
+    background:white;
+    text-align:center;
+    padding:40px 20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.heading h1{
+    color:#0b3d91;
+    font-size:38px;
+    margin:0 0 15px;
+}
+
+.heading p{
+    font-size:18px;
+    line-height:1.7;
+    max-width:800px;
+    margin:auto;
+}
+
+/* Services */
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.service{
+    background:white;
+    padding:28px 22px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.2s;
+}
+
+.service:hover{
+    transform:translateY(-4px);
+    box-shadow:0 7px 18px rgba(0,0,0,0.13);
+}
+
+.service h2{
+    color:#0b3d91;
+    font-size:24px;
+}
+
+.service p{
+    font-size:17px;
+    line-height:1.6;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:12px 22px;
+    background:#0b3d91;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#082d6b;
+}
+
+/* CTA */
+.cta{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:35px;
+    border-radius:15px;
+}
+
+.cta h2{
+    color:white;
+    font-size:28px;
+    margin-top:0;
+}
+
+.cta p{
+    font-size:17px;
+    line-height:1.6;
+}
+
+.cta .btn{
+    background:white;
+    color:#0b3d91;
+}
+
+/* Footer */
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:7px 0;
+}
+
+/* WhatsApp */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:13px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    z-index:1000;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+    nav a{
+        display:inline-block;
+        margin:6px 5px;
+        font-size:14px;
+    }
+
+    .container{
+        width:94%;
+        margin:25px auto;
+    }
+
+    .heading{
+        padding:30px 18px;
+    }
+
+    .heading h1{
+        font-size:30px;
+    }
+
+    .heading p{
+        font-size:16px;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .service{
+        padding:24px 18px;
+    }
+
+    .service p{
+        font-size:16px;
+    }
+
+    .whatsapp{
+        right:15px;
+        bottom:15px;
+        padding:11px 15px;
+        font-size:14px;
+    }
+}
 </style>
+
 </head>
+
 <body>
+
 <nav>
     <a href="index.html">Home</a>
     <a href="About.html">About</a>
     <a href="Services.html">Services</a>
+    <a href="Projects.html">Projects</a>
     <a href="Team.html">Team</a>
     <a href="Contact.html">Contact</a>
-    <a href="Projects.html">Projects</a>
 </nav>
-  <h1>our services</h1>
- <p>website Development</p>
- <p>Mobile app Development</p>
- <p>Software Development</p>
- <p>Cloud Solutions</p>
- <p>cyber Security</p>
- </body>
-   </html>
+
+<div class="container">
+
+    <section class="heading">
+
+        <h1>Our Services</h1>
+
+        <p>
+            Khan Skyline Technologies provides practical digital
+            solutions for businesses, organizations, and individuals.
+            Explore our main technology services below.
+        </p>
+
+    </section>
+
+
+    <section class="services">
+
+        <!-- Website -->
+        <div class="service">
+
+            <h2>🌐 Website Development</h2>
+
+            <p>
+                We create modern, responsive, and professional websites
+                designed to help businesses establish a strong online
+                presence.
+            </p>
+
+            <a class="btn" href="Business-Website.html">
+                View Service
+            </a>
+
+        </div>
+
+
+        <!-- Mobile App -->
+        <div class="service">
+
+            <h2>📱 Mobile App Development</h2>
+
+            <p>
+                We plan and develop user-friendly mobile application
+                solutions based on the goals and requirements of a
+                project.
+            </p>
+
+            <a class="btn" href="Mobile-App.html">
+                View Service
+            </a>
+
+        </div>
+
+
+        <!-- Cloud -->
+        <div class="service">
+
+            <h2>☁️ Cloud Software</h2>
+
+            <p>
+                We provide cloud-based software concepts that can help
+                businesses manage information and digital workflows.
+            </p>
+
+            <a class="btn" href="Cloud-Software.html">
+                View Service
+            </a>
+
+        </div>
+
+
+        <!-- E-Commerce -->
+        <div class="service">
+
+            <h2>🛒 E-Commerce</h2>
+
+            <p>
+                We create online store solutions that can help
+                businesses present products and serve customers online.
+            </p>
+
+            <a class="btn" href="E-Commerce.html">
+                View Service
+            </a>
+
+        </div>
+
+
+        <!-- Custom Software -->
+        <div class="service">
+
+            <h2>💻 Custom Software</h2>
+
+            <p>
+                We plan software solutions around specific business
+                requirements, workflows, and project goals.
+            </p>
+
+            <a class="btn" href="Custom-Software.html">
+                View Service
+            </a>
+
+        </div>
+
+
+        <!-- Maintenance -->
+        <div class="service">
+
+            <h2>🔧 Maintenance & Updates</h2>
+
+            <p>
+                We can help with website and software updates,
+                improvements, content changes, and ongoing maintenance
+                requirements.
+            </p>
+
+            <a class="btn" href="Contact.html">
+                Discuss Your Needs
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="cta">
+
+        <h2>Need a Technology Solution?</h2>
+
+        <p>
+            Tell us about your project and requirements. We can discuss
+            a suitable solution for your business.
+        </p>
+
+        <a class="btn" href="Contact.html">
+            Contact Us
+        </a>
+
+    </section>
+
+</div>
+
+
+<footer>
+
+    <p>
+        <strong>Khan Skyline Technologies</strong>
+    </p>
+
+    <p>
+        Innovate Today. Lead Tomorrow.
+    </p>
+
+    <p>
+        Karachi, Pakistan
+    </p>
+
+    <p>
+        © 2026 Khan Skyline Technologies
+    </p>
+
+</footer>
+
+
+<a class="whatsapp"
+   href="https://wa.me/923713405470"
+   target="_blank"
+   rel="noopener">
+    💬 WhatsApp
+</a>
+
+</body>
+              </html>
