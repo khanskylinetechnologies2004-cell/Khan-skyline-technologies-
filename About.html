@@ -1,52 +1,443 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>About Us</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Learn about Khan Skyline Technologies, our mission, vision and technology solutions.">
+
+<title>About Us | Khan Skyline Technologies</title>
+
 <style>
+*{
+    box-sizing:border-box;
+}
+
 body{
-    background-color: lightblue;
-    text-align: center;
-    font-family: Arial;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
 }
 
-h1{
-    color: blue;
+/* Navigation */
+nav{
+    background:#0b3d91;
+    padding:16px 10px;
+    text-align:center;
 }
 
-p{
-    font-size: 20px;
-    color: black;
-    margin: 20px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 9px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Main */
+.container{
+    width:92%;
+    max-width:1000px;
+    margin:35px auto;
+}
+
+/* Hero */
+.hero{
+    background:white;
+    padding:40px 25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.hero h1{
+    color:#0b3d91;
+    font-size:38px;
+    margin:0 0 15px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+    max-width:800px;
+    margin:auto;
+}
+
+/* Sections */
+.section{
+    background:white;
+    margin-top:25px;
+    padding:30px 25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.section h2{
+    color:#0b3d91;
+    text-align:center;
+    font-size:28px;
+}
+
+.section p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* Mission Vision */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#f8fafc;
+    border:1px solid #ddd;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.card h3{
+    color:#0b3d91;
+    font-size:23px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+/* Services */
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    padding:0;
+    list-style:none;
+}
+
+.services li{
+    background:#f8fafc;
+    padding:14px;
+    border-radius:8px;
+    font-size:16px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:13px 25px;
+    background:#0b3d91;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#082d6b;
+}
+
+/* CTA */
+.cta{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    margin-top:25px;
+    padding:35px 20px;
+    border-radius:15px;
+}
+
+.cta h2{
+    color:white;
+    margin-top:0;
+}
+
+.cta p{
+    font-size:17px;
+}
+
+/* Footer */
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:7px 0;
+}
+
+/* WhatsApp */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:13px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    z-index:1000;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+    nav a{
+        display:inline-block;
+        margin:6px 5px;
+        font-size:14px;
+    }
+
+    .container{
+        width:94%;
+        margin:25px auto;
+    }
+
+    .hero{
+        padding:30px 18px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section{
+        padding:25px 18px;
+    }
+
+    .section h2{
+        font-size:24px;
+    }
+
+    .cards,
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .section p{
+        font-size:16px;
+    }
+
+    .whatsapp{
+        right:15px;
+        bottom:15px;
+        padding:11px 15px;
+        font-size:14px;
+    }
 }
 </style>
 
 </head>
 
 <body>
-  <nav>
+
+<nav>
     <a href="index.html">Home</a>
     <a href="About.html">About</a>
     <a href="Services.html">Services</a>
+    <a href="Projects.html">Projects</a>
     <a href="Team.html">Team</a>
     <a href="Contact.html">Contact</a>
-    <a href="Projects.html">Projects</a>
 </nav>
-<h1>About Us</h1>
 
-<h2>Welcome to Khan Skyline Technologies</h2>
+<div class="container">
 
-<p>
-Khan Skyline Technologies is a modern technology company dedicated to providing innovative digital solutions for businesses, organizations, and individuals. We specialize in creating high-quality, secure, and user-friendly technology services that help our clients grow in today's digital world.
-</p>
+    <!-- Introduction -->
+    <section class="hero">
 
-<p>
-Our services include Website Development, Mobile App Development, Software Development, Cloud Solutions, Cyber Security, and IT Consulting. We focus on quality, innovation, and customer satisfaction in every project we deliver.
-</p>
+        <h1>About Khan Skyline Technologies</h1>
 
-<p>
-Our mission is to provide reliable technology solutions that empower businesses to succeed. Our vision is to become one of the leading technology companies known for excellence, creativity, and trust.
-</p>
+        <p>
+            Khan Skyline Technologies is a technology-focused company
+            dedicated to creating practical and modern digital solutions
+            for businesses, organizations, and individuals.
+        </p>
 
-<p><b>Innovate Today. Lead Tomorrow.</b></p>
+    </section>
+
+
+    <!-- Who We Are -->
+    <section class="section">
+
+        <h2>Who We Are</h2>
+
+        <p>
+            We focus on developing websites, mobile applications,
+            software solutions, cloud-based concepts, and e-commerce
+            platforms.
+        </p>
+
+        <p>
+            Our approach is based on understanding project requirements
+            and creating solutions that are useful, simple to understand,
+            and suitable for the intended users.
+        </p>
+
+        <p>
+            We believe that technology should solve real problems and
+            help businesses improve their digital presence.
+        </p>
+
+    </section>
+
+
+    <!-- Mission & Vision -->
+    <section class="section">
+
+        <h2>Our Mission & Vision</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>🎯 Our Mission</h3>
+
+                <p>
+                    To provide practical, reliable, and user-friendly
+                    technology solutions while focusing on quality,
+                    innovation, and customer satisfaction.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🚀 Our Vision</h3>
+
+                <p>
+                    To build a trusted technology company recognized for
+                    innovation, useful digital solutions, quality work,
+                    and professional service.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="section">
+
+        <h2>What We Do</h2>
+
+        <ul class="services">
+
+            <li>🌐 Website Development</li>
+
+            <li>📱 Mobile App Development</li>
+
+            <li>☁️ Cloud Software Solutions</li>
+
+            <li>🛒 E-Commerce Websites</li>
+
+            <li>💻 Custom Software Development</li>
+
+            <li>🔧 Website & Software Maintenance</li>
+
+        </ul>
+
+        <div style="text-align:center;">
+
+            <a class="btn" href="Services.html">
+                Explore Our Services
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section">
+
+        <h2>Our Projects</h2>
+
+        <p style="text-align:center;">
+            Explore our project categories and learn more about the
+            solutions we can provide.
+        </p>
+
+        <div style="text-align:center;">
+
+            <a class="btn" href="Projects.html">
+                View Our Projects
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Let's Build Something Useful</h2>
+
+        <p>
+            Have a technology project or business idea?
+            Contact Khan Skyline Technologies to discuss your
+            requirements.
+        </p>
+
+        <a class="btn"
+           href="Contact.html"
+           style="background:white;color:#0b3d91;">
+            Contact Us
+        </a>
+
+    </section>
+
+</div>
+
+
+<footer>
+
+    <p>
+        <strong>Khan Skyline Technologies</strong>
+    </p>
+
+    <p>
+        Innovate Today. Lead Tomorrow.
+    </p>
+
+    <p>
+        Karachi, Pakistan
+    </p>
+
+    <p>
+        © 2026 Khan Skyline Technologies
+    </p>
+
+</footer>
+
+
+<a class="whatsapp"
+   href="https://wa.me/923713405470"
+   target="_blank"
+   rel="noopener">
+    💬 WhatsApp
+</a>
+
+</body>
+    </html>
