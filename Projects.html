@@ -1,104 +1,385 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Our Projects - Khan Skyline Technologies</title>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description" content="Explore projects by Khan Skyline Technologies including business websites, mobile apps, cloud software, e-commerce and custom software.">
+
+<title>Our Projects | Khan Skyline Technologies</title>
+
 <style>
-body{
-    background-color:lightblue;
-    font-family:Arial, sans-serif;
-    margin:0;
-    text-align:center;
+*{
+    box-sizing:border-box;
 }
 
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+/* Navigation */
 nav{
-    background-color:blue;
-    padding:15px;
+    background:#0b3d91;
+    padding:16px 10px;
+    text-align:center;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:12px;
-    font-size:18px;
+    margin:0 9px;
+    font-size:16px;
+    font-weight:bold;
 }
 
-h1{
-    color:blue;
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Main */
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:35px auto;
+}
+
+/* Heading */
+.heading{
+    background:white;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.heading h1{
+    color:#0b3d91;
+    font-size:38px;
+    margin:0 0 15px;
+}
+
+.heading p{
+    font-size:18px;
+    line-height:1.7;
+    max-width:750px;
+    margin:auto;
+}
+
+/* Project Grid */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
     margin-top:30px;
 }
 
 .project{
     background:white;
-    width:90%;
-    max-width:500px;
-    margin:20px auto;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    padding:28px 22px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    transition:0.2s;
+}
+
+.project:hover{
+    transform:translateY(-4px);
+    box-shadow:0 7px 18px rgba(0,0,0,0.13);
 }
 
 .project h2{
-    color:blue;
+    color:#0b3d91;
+    margin-top:5px;
 }
 
 .project p{
-    font-size:18px;
+    font-size:17px;
+    line-height:1.6;
 }
 
-footer{
-    background-color:blue;
+/* Button */
+.btn{
+    display:inline-block;
+    margin-top:12px;
+    padding:12px 22px;
+    background:#0b3d91;
     color:white;
-    padding:20px;
-    margin-top:30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#082d6b;
+}
+
+/* Contact Section */
+.contact{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:35px;
+    border-radius:15px;
+}
+
+.contact h2{
+    margin-top:0;
+    font-size:28px;
+}
+
+.contact p{
+    font-size:17px;
+}
+
+.contact .btn{
+    background:white;
+    color:#0b3d91;
+}
+
+/* Footer */
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:28px 15px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:7px 0;
+}
+
+/* WhatsApp */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:13px 18px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    z-index:1000;
+}
+
+/* Mobile */
+@media(max-width:700px){
+
+    nav a{
+        display:inline-block;
+        margin:6px 5px;
+        font-size:14px;
+    }
+
+    .container{
+        width:94%;
+        margin:25px auto;
+    }
+
+    .heading{
+        padding:28px 18px;
+    }
+
+    .heading h1{
+        font-size:30px;
+    }
+
+    .heading p{
+        font-size:16px;
+    }
+
+    .projects{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .project{
+        padding:24px 18px;
+    }
+
+    .project p{
+        font-size:16px;
+    }
+
+    .whatsapp{
+        right:15px;
+        bottom:15px;
+        padding:11px 15px;
+        font-size:14px;
+    }
 }
 </style>
 
 </head>
+
 <body>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="About.html">About</a>
-<a href="Services.html">Services</a>
-<a href="Projects.html">Projects</a>
-<a href="Team.html">Team</a>
-<a href="Contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Services.html">Services</a>
+    <a href="Projects.html">Projects</a>
+    <a href="Team.html">Team</a>
+    <a href="Contact.html">Contact</a>
 </nav>
 
-<h1>Our Projects</h1>
+<div class="container">
 
-<div class="project">
-<h2>🌐 Business Website</h2>
-<p>Professional websites for companies and businesses.</p>
+    <section class="heading">
+
+        <h1>Our Projects</h1>
+
+        <p>
+            Explore some of the technology solutions and project
+            categories offered by Khan Skyline Technologies.
+        </p>
+
+    </section>
+
+
+    <section class="projects">
+
+        <!-- Business Website -->
+        <div class="project">
+
+            <h2>🌐 Business Website</h2>
+
+            <p>
+                Modern and responsive websites designed to give
+                businesses a professional online presence.
+            </p>
+
+            <a class="btn" href="Business-Website.html">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- Mobile App -->
+        <div class="project">
+
+            <h2>📱 Mobile App</h2>
+
+            <p>
+                User-friendly mobile application solutions designed
+                around specific project requirements.
+            </p>
+
+            <a class="btn" href="Mobile-App.html">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- Cloud Software -->
+        <div class="project">
+
+            <h2>☁️ Cloud Software</h2>
+
+            <p>
+                Cloud-based software concepts that can help businesses
+                manage information and digital workflows.
+            </p>
+
+            <a class="btn" href="Cloud-Software.html">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- E-Commerce -->
+        <div class="project">
+
+            <h2>🛒 E-Commerce Website</h2>
+
+            <p>
+                Online store solutions with product pages, shopping
+                features and project-based payment options.
+            </p>
+
+            <a class="btn" href="E-Commerce.html">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- Custom Software -->
+        <div class="project">
+
+            <h2>💻 Custom Software</h2>
+
+            <p>
+                Software solutions planned around specific business
+                requirements, workflows and project goals.
+            </p>
+
+            <a class="btn" href="Custom-Software.html">
+                View Project
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact">
+
+        <h2>Have a Project Idea?</h2>
+
+        <p>
+            Contact Khan Skyline Technologies to discuss your
+            requirements and project idea.
+        </p>
+
+        <a class="btn" href="Contact.html">
+            Contact Us
+        </a>
+
+    </section>
+
 </div>
 
-<div class="project">
-<h2>📱 Mobile App</h2>
-<p>Android and iOS mobile application development.</p>
-</div>
-
-<div class="project">
-<h2>☁️ Cloud Software</h2>
-<p>Secure cloud-based software solutions.</p>
-</div>
-
-<div class="project">
-<h2>🛒 E-Commerce Website</h2>
-<p>Online shopping websites with payment integration.</p>
-</div>
-
-<div class="project">
-<h2>💻 Custom Software</h2>
-<p>Software developed according to customer requirements.</p>
-</div>
 
 <footer>
-<p>© 2026 Khan Skyline Technologies</p>
-<p>Karachi, Pakistan</p>
+
+    <p>
+        <strong>Khan Skyline Technologies</strong>
+    </p>
+
+    <p>
+        Innovate Today. Lead Tomorrow.
+    </p>
+
+    <p>
+        Karachi, Pakistan
+    </p>
+
+    <p>
+        © 2026 Khan Skyline Technologies
+    </p>
+
 </footer>
 
+
+<a class="whatsapp"
+   href="https://wa.me/923713405470"
+   target="_blank"
+   rel="noopener">
+    💬 WhatsApp
+</a>
+
 </body>
-</html>
+    </html>
